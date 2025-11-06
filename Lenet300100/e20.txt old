@@ -1,0 +1,320 @@
+
+--- Pruning Round 1/10 ---
+Epoch 1 | Train Acc: 0.5279, Val Acc: 0.7342
+Epoch 2 | Train Acc: 0.8531, Val Acc: 0.8662
+Epoch 3 | Train Acc: 0.9180, Val Acc: 0.8877
+Epoch 4 | Train Acc: 0.9312, Val Acc: 0.8987
+Epoch 5 | Train Acc: 0.9419, Val Acc: 0.9040
+Epoch 6 | Train Acc: 0.9500, Val Acc: 0.9088
+Epoch 7 | Train Acc: 0.9547, Val Acc: 0.9120
+Epoch 8 | Train Acc: 0.9584, Val Acc: 0.9152
+Epoch 9 | Train Acc: 0.9632, Val Acc: 0.9183
+Epoch 10 | Train Acc: 0.9665, Val Acc: 0.9193
+Epoch 11 | Train Acc: 0.9702, Val Acc: 0.9257
+Epoch 12 | Train Acc: 0.9724, Val Acc: 0.9215
+Epoch 13 | Train Acc: 0.9739, Val Acc: 0.9275
+Epoch 14 | Train Acc: 0.9764, Val Acc: 0.9308
+Epoch 15 | Train Acc: 0.9788, Val Acc: 0.9310
+Epoch 16 | Train Acc: 0.9810, Val Acc: 0.9342
+Epoch 17 | Train Acc: 0.9835, Val Acc: 0.9363
+Epoch 18 | Train Acc: 0.9856, Val Acc: 0.9343
+Epoch 19 | Train Acc: 0.9863, Val Acc: 0.9383
+Epoch 20 | Train Acc: 0.9882, Val Acc: 0.9407
+Layer fc1: 20.00% pruned (188160.0/235200 remain)
+Layer fc2: 20.00% pruned (24000.0/30000 remain)
+Layer fc3: 10.00% pruned (900.0/1000 remain)
+--> Total Model Sparsity: 19.96% pruned (213060.0/266200 remain)
+
+--> Round 1 completed in 39.86 sec (0.66 min)
+
+--- Pruning Round 2/10 ---
+Epoch 1 | Train Acc: 0.9899, Val Acc: 0.9420
+Epoch 2 | Train Acc: 0.9898, Val Acc: 0.9395
+Epoch 3 | Train Acc: 0.9909, Val Acc: 0.9400
+Epoch 4 | Train Acc: 0.9906, Val Acc: 0.9415
+Epoch 5 | Train Acc: 0.9928, Val Acc: 0.9408
+Epoch 6 | Train Acc: 0.9938, Val Acc: 0.9438
+Epoch 7 | Train Acc: 0.9942, Val Acc: 0.9432
+Epoch 8 | Train Acc: 0.9950, Val Acc: 0.9447
+Epoch 9 | Train Acc: 0.9945, Val Acc: 0.9453
+Epoch 10 | Train Acc: 0.9960, Val Acc: 0.9452
+Epoch 11 | Train Acc: 0.9958, Val Acc: 0.9442
+Epoch 12 | Train Acc: 0.9963, Val Acc: 0.9453
+Epoch 13 | Train Acc: 0.9965, Val Acc: 0.9445
+Epoch 14 | Train Acc: 0.9973, Val Acc: 0.9458
+Epoch 15 | Train Acc: 0.9974, Val Acc: 0.9462
+Epoch 16 | Train Acc: 0.9976, Val Acc: 0.9455
+Epoch 17 | Train Acc: 0.9982, Val Acc: 0.9468
+Epoch 18 | Train Acc: 0.9982, Val Acc: 0.9477
+Epoch 19 | Train Acc: 0.9986, Val Acc: 0.9467
+Epoch 20 | Train Acc: 0.9988, Val Acc: 0.9458
+Layer fc1: 36.00% pruned (150528.0/235200 remain)
+Layer fc2: 36.00% pruned (19200.0/30000 remain)
+Layer fc3: 19.00% pruned (810.0/1000 remain)
+--> Total Model Sparsity: 35.94% pruned (170538.0/266200 remain)
+
+--> Round 2 completed in 40.37 sec (0.67 min)
+
+--- Pruning Round 3/10 ---
+Epoch 1 | Train Acc: 0.9991, Val Acc: 0.9477
+Epoch 2 | Train Acc: 0.9992, Val Acc: 0.9467
+Epoch 3 | Train Acc: 0.9994, Val Acc: 0.9472
+Epoch 4 | Train Acc: 0.9994, Val Acc: 0.9473
+Epoch 5 | Train Acc: 0.9995, Val Acc: 0.9470
+Epoch 6 | Train Acc: 0.9995, Val Acc: 0.9470
+Epoch 7 | Train Acc: 0.9996, Val Acc: 0.9482
+Epoch 8 | Train Acc: 0.9997, Val Acc: 0.9477
+Epoch 9 | Train Acc: 0.9997, Val Acc: 0.9473
+Epoch 10 | Train Acc: 0.9998, Val Acc: 0.9485
+Epoch 11 | Train Acc: 0.9998, Val Acc: 0.9477
+Epoch 12 | Train Acc: 0.9998, Val Acc: 0.9477
+Epoch 13 | Train Acc: 0.9998, Val Acc: 0.9480
+Epoch 14 | Train Acc: 0.9999, Val Acc: 0.9477
+Epoch 15 | Train Acc: 0.9999, Val Acc: 0.9478
+Epoch 16 | Train Acc: 0.9998, Val Acc: 0.9473
+Epoch 17 | Train Acc: 0.9999, Val Acc: 0.9483
+Epoch 18 | Train Acc: 0.9999, Val Acc: 0.9475
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9473
+Epoch 20 | Train Acc: 0.9999, Val Acc: 0.9480
+Layer fc1: 48.80% pruned (120422.0/235200 remain)
+Layer fc2: 48.80% pruned (15360.0/30000 remain)
+Layer fc3: 27.10% pruned (729.0/1000 remain)
+--> Total Model Sparsity: 48.72% pruned (136511.0/266200 remain)
+
+--> Round 3 completed in 38.27 sec (0.64 min)
+
+--- Pruning Round 4/10 ---
+Epoch 1 | Train Acc: 1.0000, Val Acc: 0.9480
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9482
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9492
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9490
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9488
+Layer fc1: 59.04% pruned (96338.0/235200 remain)
+Layer fc2: 59.04% pruned (12288.0/30000 remain)
+Layer fc3: 34.40% pruned (656.0/1000 remain)
+--> Total Model Sparsity: 58.95% pruned (109282.0/266200 remain)
+
+--> Round 4 completed in 46.36 sec (0.77 min)
+
+--- Pruning Round 5/10 ---
+Epoch 1 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9505
+Layer fc1: 67.23% pruned (77070.0/235200 remain)
+Layer fc2: 67.23% pruned (9830.0/30000 remain)
+Layer fc3: 41.00% pruned (590.0/1000 remain)
+--> Total Model Sparsity: 67.13% pruned (87490.0/266200 remain)
+
+--> Round 5 completed in 40.08 sec (0.67 min)
+
+--- Pruning Round 6/10 ---
+Epoch 1 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9510
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9508
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9508
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9508
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9507
+Layer fc1: 73.79% pruned (61656.0/235200 remain)
+Layer fc2: 73.79% pruned (7864.0/30000 remain)
+Layer fc3: 46.90% pruned (531.0/1000 remain)
+--> Total Model Sparsity: 73.68% pruned (70051.0/266200 remain)
+
+--> Round 6 completed in 39.92 sec (0.67 min)
+
+--- Pruning Round 7/10 ---
+Epoch 1 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9512
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9508
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9508
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9508
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9507
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9510
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9508
+Layer fc1: 79.03% pruned (49325.0/235200 remain)
+Layer fc2: 79.03% pruned (6291.0/30000 remain)
+Layer fc3: 52.20% pruned (478.0/1000 remain)
+--> Total Model Sparsity: 78.93% pruned (56094.0/266200 remain)
+
+--> Round 7 completed in 38.62 sec (0.64 min)
+
+--- Pruning Round 8/10 ---
+Epoch 1 | Train Acc: 1.0000, Val Acc: 0.9490
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9487
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9492
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9487
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9503
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9503
+Layer fc1: 83.22% pruned (39460.0/235200 remain)
+Layer fc2: 83.22% pruned (5033.0/30000 remain)
+Layer fc3: 57.00% pruned (430.0/1000 remain)
+--> Total Model Sparsity: 83.12% pruned (44923.0/266200 remain)
+
+--> Round 8 completed in 40.26 sec (0.67 min)
+
+--- Pruning Round 9/10 ---
+Epoch 1 | Train Acc: 1.0000, Val Acc: 0.9490
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9502
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9492
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9492
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9497
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9505
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9502
+Layer fc1: 86.58% pruned (31568.0/235200 remain)
+Layer fc2: 86.58% pruned (4026.0/30000 remain)
+Layer fc3: 61.30% pruned (387.0/1000 remain)
+--> Total Model Sparsity: 86.48% pruned (35981.0/266200 remain)
+
+--> Round 9 completed in 38.76 sec (0.65 min)
+
+--- Pruning Round 10/10 ---
+Epoch 1 | Train Acc: 0.9999, Val Acc: 0.9487
+Epoch 2 | Train Acc: 1.0000, Val Acc: 0.9488
+Epoch 3 | Train Acc: 1.0000, Val Acc: 0.9487
+Epoch 4 | Train Acc: 1.0000, Val Acc: 0.9492
+Epoch 5 | Train Acc: 1.0000, Val Acc: 0.9487
+Epoch 6 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 7 | Train Acc: 1.0000, Val Acc: 0.9487
+Epoch 8 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 9 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 10 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 11 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 12 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 13 | Train Acc: 1.0000, Val Acc: 0.9487
+Epoch 14 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 15 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 16 | Train Acc: 1.0000, Val Acc: 0.9500
+Epoch 17 | Train Acc: 1.0000, Val Acc: 0.9498
+Epoch 18 | Train Acc: 1.0000, Val Acc: 0.9495
+Epoch 19 | Train Acc: 1.0000, Val Acc: 0.9493
+Epoch 20 | Train Acc: 1.0000, Val Acc: 0.9492
+Layer fc1: 89.26% pruned (25254.0/235200 remain)
+Layer fc2: 89.26% pruned (3221.0/30000 remain)
+Layer fc3: 65.20% pruned (348.0/1000 remain)
+--> Total Model Sparsity: 89.17% pruned (28823.0/266200 remain)
+
+--> Round 10 completed in 39.65 sec (0.66 min)
+
+Iterative pruning completed in 402.15 seconds (6.70 min).
+
+Final Pruned Model Performance:
+Train Acc: 0.9418, Val Acc: 0.9332, Test Acc: 0.9344
+
+--- Testing Lottery Ticket Hypothesis ---
+Epoch 1 | Train Acc: 0.8488, Val Acc: 0.9160
+Epoch 2 | Train Acc: 0.9322, Val Acc: 0.9372
+Epoch 3 | Train Acc: 0.9471, Val Acc: 0.9467
+Epoch 4 | Train Acc: 0.9553, Val Acc: 0.9548
+Epoch 5 | Train Acc: 0.9609, Val Acc: 0.9563
+Epoch 6 | Train Acc: 0.9646, Val Acc: 0.9598
+Epoch 7 | Train Acc: 0.9675, Val Acc: 0.9650
+Epoch 8 | Train Acc: 0.9708, Val Acc: 0.9657
+Epoch 9 | Train Acc: 0.9729, Val Acc: 0.9660
+Epoch 10 | Train Acc: 0.9741, Val Acc: 0.9675
+Epoch 11 | Train Acc: 0.9763, Val Acc: 0.9673
+Epoch 12 | Train Acc: 0.9770, Val Acc: 0.9688
+Epoch 13 | Train Acc: 0.9789, Val Acc: 0.9697
+Epoch 14 | Train Acc: 0.9799, Val Acc: 0.9713
+Epoch 15 | Train Acc: 0.9810, Val Acc: 0.9692
+Epoch 16 | Train Acc: 0.9814, Val Acc: 0.9717
+Epoch 17 | Train Acc: 0.9828, Val Acc: 0.9722
+Epoch 18 | Train Acc: 0.9834, Val Acc: 0.9708
+Epoch 19 | Train Acc: 0.9847, Val Acc: 0.9717
+Epoch 20 | Train Acc: 0.9849, Val Acc: 0.9712
+Epoch 21 | Train Acc: 0.9857, Val Acc: 0.9698
+Epoch 22 | Train Acc: 0.9865, Val Acc: 0.9737
+Epoch 23 | Train Acc: 0.9870, Val Acc: 0.9728
+Epoch 24 | Train Acc: 0.9880, Val Acc: 0.9730
+Epoch 25 | Train Acc: 0.9882, Val Acc: 0.9718
+Epoch 26 | Train Acc: 0.9886, Val Acc: 0.9730
+Epoch 27 | Train Acc: 0.9897, Val Acc: 0.9737
+Epoch 28 | Train Acc: 0.9897, Val Acc: 0.9725
+Epoch 29 | Train Acc: 0.9909, Val Acc: 0.9723
+Epoch 30 | Train Acc: 0.9909, Val Acc: 0.9725
+
+Lottery Ticket Final Performance:
+Train Acc: 0.9918, Val Acc: 0.9725, Test Acc: 0.9775

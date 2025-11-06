@@ -1,0 +1,21 @@
+Running with --difficulty e --percent 0.1
+Saving output to e10.txt
+Running with --difficulty e --percent 0.2
+Saving output to e20.txt
+Running with --difficulty e --percent 0.3
+Saving output to e30.txt
+Running with --difficulty e --percent 0.4
+Saving output to e40.txt
+Running with --difficulty e --percent 0.5
+Saving output to e50.txt
+Running with --difficulty h --percent 0.1
+Saving output to h10.txt
+Running with --difficulty h --percent 0.2
+Saving output to h20.txt
+Running with --difficulty h --percent 0.3
+Saving output to h30.txt
+Running with --difficulty h --percent 0.4
+Saving output to h40.txt
+Running with --difficulty h --percent 0.5
+Saving output to h50.txt
+DONE

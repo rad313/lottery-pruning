@@ -1,0 +1,410 @@
+
+--- Pruning Round 1/7 ---
+Epoch 1 | Train Acc: 0.2696, Val Acc: 0.3552
+Epoch 2 | Train Acc: 0.3331, Val Acc: 0.3826
+Epoch 3 | Train Acc: 0.3658, Val Acc: 0.4800
+Epoch 4 | Train Acc: 0.3986, Val Acc: 0.5112
+Epoch 5 | Train Acc: 0.4266, Val Acc: 0.5664
+Epoch 6 | Train Acc: 0.4520, Val Acc: 0.5548
+Epoch 7 | Train Acc: 0.4705, Val Acc: 0.5950
+Epoch 8 | Train Acc: 0.4884, Val Acc: 0.6130
+Epoch 9 | Train Acc: 0.5106, Val Acc: 0.6584
+Epoch 10 | Train Acc: 0.5280, Val Acc: 0.6616
+Epoch 11 | Train Acc: 0.5384, Val Acc: 0.6650
+Epoch 12 | Train Acc: 0.5594, Val Acc: 0.6938
+Epoch 13 | Train Acc: 0.5713, Val Acc: 0.6782
+Epoch 14 | Train Acc: 0.5878, Val Acc: 0.7208
+Epoch 15 | Train Acc: 0.5969, Val Acc: 0.7076
+Epoch 16 | Train Acc: 0.6066, Val Acc: 0.7318
+Epoch 17 | Train Acc: 0.6201, Val Acc: 0.7342
+Epoch 18 | Train Acc: 0.6345, Val Acc: 0.7546
+Epoch 19 | Train Acc: 0.6470, Val Acc: 0.7554
+Epoch 20 | Train Acc: 0.6556, Val Acc: 0.7704
+Layer conv1: 9.85% pruned (8481.0/9408 remain)
+Layer layer1.0.conv1: 6.42% pruned (34497.0/36864 remain)
+Layer layer1.0.conv2: 6.44% pruned (34491.0/36864 remain)
+Layer layer1.1.conv1: 6.35% pruned (34522.0/36864 remain)
+Layer layer1.1.conv2: 6.25% pruned (34560.0/36864 remain)
+Layer layer2.0.conv1: 7.44% pruned (68245.0/73728 remain)
+Layer layer2.0.conv2: 7.47% pruned (136446.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 7.57% pruned (136292.0/147456 remain)
+Layer layer2.1.conv2: 7.54% pruned (136342.0/147456 remain)
+Layer layer3.0.conv1: 9.02% pruned (268320.0/294912 remain)
+Layer layer3.0.conv2: 11.31% pruned (523104.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 14.51% pruned (504265.0/589824 remain)
+Layer layer3.1.conv2: 14.81% pruned (502455.0/589824 remain)
+Layer layer4.0.conv1: 19.86% pruned (945356.0/1179648 remain)
+Layer layer4.0.conv2: 22.88% pruned (1819407.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 23.60% pruned (1802414.0/2359296 remain)
+Layer layer4.1.conv2: 23.42% pruned (1806707.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 19.68% pruned (8973056.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 1 completed in 398.54 sec (6.64 min)
+
+--- Pruning Round 2/7 ---
+Epoch 1 | Train Acc: 0.6701, Val Acc: 0.7846
+Epoch 2 | Train Acc: 0.6760, Val Acc: 0.7748
+Epoch 3 | Train Acc: 0.6868, Val Acc: 0.7858
+Epoch 4 | Train Acc: 0.6998, Val Acc: 0.8082
+Epoch 5 | Train Acc: 0.7035, Val Acc: 0.7910
+Epoch 6 | Train Acc: 0.7092, Val Acc: 0.7958
+Epoch 7 | Train Acc: 0.7184, Val Acc: 0.7992
+Epoch 8 | Train Acc: 0.7287, Val Acc: 0.8088
+Epoch 9 | Train Acc: 0.7330, Val Acc: 0.8182
+Epoch 10 | Train Acc: 0.7443, Val Acc: 0.8308
+Epoch 11 | Train Acc: 0.7488, Val Acc: 0.8242
+Epoch 12 | Train Acc: 0.7528, Val Acc: 0.8162
+Epoch 13 | Train Acc: 0.7579, Val Acc: 0.8332
+Epoch 14 | Train Acc: 0.7680, Val Acc: 0.8414
+Epoch 15 | Train Acc: 0.7725, Val Acc: 0.8422
+Epoch 16 | Train Acc: 0.7752, Val Acc: 0.8446
+Epoch 17 | Train Acc: 0.7856, Val Acc: 0.8386
+Epoch 18 | Train Acc: 0.7892, Val Acc: 0.8498
+Epoch 19 | Train Acc: 0.7970, Val Acc: 0.8440
+Epoch 20 | Train Acc: 0.8045, Val Acc: 0.8538
+Layer conv1: 19.69% pruned (7556.0/9408 remain)
+Layer layer1.0.conv1: 14.37% pruned (31566.0/36864 remain)
+Layer layer1.0.conv2: 14.18% pruned (31636.0/36864 remain)
+Layer layer1.1.conv1: 14.17% pruned (31641.0/36864 remain)
+Layer layer1.1.conv2: 13.89% pruned (31744.0/36864 remain)
+Layer layer2.0.conv1: 15.83% pruned (62055.0/73728 remain)
+Layer layer2.0.conv2: 15.77% pruned (124204.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 16.19% pruned (123579.0/147456 remain)
+Layer layer2.1.conv2: 16.20% pruned (123570.0/147456 remain)
+Layer layer3.0.conv1: 18.18% pruned (241283.0/294912 remain)
+Layer layer3.0.conv2: 21.72% pruned (461711.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 28.51% pruned (421662.0/589824 remain)
+Layer layer3.1.conv2: 28.67% pruned (420739.0/589824 remain)
+Layer layer4.0.conv1: 35.07% pruned (765951.0/1179648 remain)
+Layer layer4.0.conv2: 40.48% pruned (1404140.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 41.83% pruned (1372520.0/2359296 remain)
+Layer layer4.1.conv2: 41.46% pruned (1381166.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 35.43% pruned (7213875.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 2 completed in 389.99 sec (6.50 min)
+
+--- Pruning Round 3/7 ---
+Epoch 1 | Train Acc: 0.8114, Val Acc: 0.8512
+Epoch 2 | Train Acc: 0.8177, Val Acc: 0.8698
+Epoch 3 | Train Acc: 0.8232, Val Acc: 0.8792
+Epoch 4 | Train Acc: 0.8265, Val Acc: 0.8648
+Epoch 5 | Train Acc: 0.8359, Val Acc: 0.8720
+Epoch 6 | Train Acc: 0.8336, Val Acc: 0.8848
+Epoch 7 | Train Acc: 0.8429, Val Acc: 0.8834
+Epoch 8 | Train Acc: 0.8428, Val Acc: 0.8788
+Epoch 9 | Train Acc: 0.8488, Val Acc: 0.8862
+Epoch 10 | Train Acc: 0.8514, Val Acc: 0.8806
+Epoch 11 | Train Acc: 0.8518, Val Acc: 0.8900
+Epoch 12 | Train Acc: 0.8580, Val Acc: 0.8820
+Epoch 13 | Train Acc: 0.8601, Val Acc: 0.8968
+Epoch 14 | Train Acc: 0.8589, Val Acc: 0.8848
+Epoch 15 | Train Acc: 0.8688, Val Acc: 0.8786
+Epoch 16 | Train Acc: 0.8738, Val Acc: 0.9048
+Epoch 17 | Train Acc: 0.8770, Val Acc: 0.8924
+Epoch 18 | Train Acc: 0.8775, Val Acc: 0.8968
+Epoch 19 | Train Acc: 0.8748, Val Acc: 0.8982
+Epoch 20 | Train Acc: 0.8834, Val Acc: 0.8998
+Layer conv1: 25.96% pruned (6966.0/9408 remain)
+Layer layer1.0.conv1: 21.27% pruned (29024.0/36864 remain)
+Layer layer1.0.conv2: 21.19% pruned (29053.0/36864 remain)
+Layer layer1.1.conv1: 21.31% pruned (29007.0/36864 remain)
+Layer layer1.1.conv2: 21.06% pruned (29100.0/36864 remain)
+Layer layer2.0.conv1: 23.50% pruned (56399.0/73728 remain)
+Layer layer2.0.conv2: 23.65% pruned (112590.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 24.09% pruned (111940.0/147456 remain)
+Layer layer2.1.conv2: 24.37% pruned (111523.0/147456 remain)
+Layer layer3.0.conv1: 26.55% pruned (216615.0/294912 remain)
+Layer layer3.0.conv2: 30.59% pruned (409392.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 38.92% pruned (360262.0/589824 remain)
+Layer layer3.1.conv2: 39.34% pruned (357785.0/589824 remain)
+Layer layer4.0.conv1: 47.13% pruned (623642.0/1179648 remain)
+Layer layer4.0.conv2: 54.59% pruned (1071366.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 56.21% pruned (1033149.0/2359296 remain)
+Layer layer4.1.conv2: 55.85% pruned (1041565.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 48.03% pruned (5806530.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 3 completed in 373.45 sec (6.22 min)
+
+--- Pruning Round 4/7 ---
+Epoch 1 | Train Acc: 0.8897, Val Acc: 0.9070
+Epoch 2 | Train Acc: 0.8946, Val Acc: 0.9076
+Epoch 3 | Train Acc: 0.8943, Val Acc: 0.9018
+Epoch 4 | Train Acc: 0.8968, Val Acc: 0.9182
+Epoch 5 | Train Acc: 0.8986, Val Acc: 0.9090
+Epoch 6 | Train Acc: 0.9027, Val Acc: 0.9090
+Epoch 7 | Train Acc: 0.8978, Val Acc: 0.8998
+Epoch 8 | Train Acc: 0.9012, Val Acc: 0.9154
+Epoch 9 | Train Acc: 0.9046, Val Acc: 0.9196
+Epoch 10 | Train Acc: 0.9085, Val Acc: 0.9174
+Epoch 11 | Train Acc: 0.9084, Val Acc: 0.9134
+Epoch 12 | Train Acc: 0.9115, Val Acc: 0.9118
+Epoch 13 | Train Acc: 0.9096, Val Acc: 0.9128
+Epoch 14 | Train Acc: 0.9203, Val Acc: 0.9222
+Epoch 15 | Train Acc: 0.9151, Val Acc: 0.9156
+Epoch 16 | Train Acc: 0.9176, Val Acc: 0.9210
+Epoch 17 | Train Acc: 0.9183, Val Acc: 0.9250
+Epoch 18 | Train Acc: 0.9178, Val Acc: 0.9300
+Epoch 19 | Train Acc: 0.9225, Val Acc: 0.9278
+Epoch 20 | Train Acc: 0.9241, Val Acc: 0.9318
+Layer conv1: 29.79% pruned (6605.0/9408 remain)
+Layer layer1.0.conv1: 26.86% pruned (26962.0/36864 remain)
+Layer layer1.0.conv2: 26.61% pruned (27053.0/36864 remain)
+Layer layer1.1.conv1: 26.87% pruned (26957.0/36864 remain)
+Layer layer1.1.conv2: 27.08% pruned (26881.0/36864 remain)
+Layer layer2.0.conv1: 29.96% pruned (51637.0/73728 remain)
+Layer layer2.0.conv2: 30.32% pruned (102745.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 30.70% pruned (102182.0/147456 remain)
+Layer layer2.1.conv2: 31.26% pruned (101357.0/147456 remain)
+Layer layer3.0.conv1: 33.65% pruned (195680.0/294912 remain)
+Layer layer3.0.conv2: 37.97% pruned (365883.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 46.82% pruned (313652.0/589824 remain)
+Layer layer3.1.conv2: 46.91% pruned (313163.0/589824 remain)
+Layer layer4.0.conv1: 56.87% pruned (508794.0/1179648 remain)
+Layer layer4.0.conv2: 65.96% pruned (802989.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 67.72% pruned (761496.0/2359296 remain)
+Layer layer4.1.conv2: 67.39% pruned (769466.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 58.10% pruned (4680654.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 4 completed in 376.40 sec (6.27 min)
+
+--- Pruning Round 5/7 ---
+Epoch 1 | Train Acc: 0.9286, Val Acc: 0.9248
+Epoch 2 | Train Acc: 0.9295, Val Acc: 0.9258
+Epoch 3 | Train Acc: 0.9294, Val Acc: 0.9330
+Epoch 4 | Train Acc: 0.9306, Val Acc: 0.9194
+Epoch 5 | Train Acc: 0.9321, Val Acc: 0.9238
+Epoch 6 | Train Acc: 0.9333, Val Acc: 0.9310
+Epoch 7 | Train Acc: 0.9333, Val Acc: 0.9296
+Epoch 8 | Train Acc: 0.9360, Val Acc: 0.9316
+Epoch 9 | Train Acc: 0.9350, Val Acc: 0.9344
+Epoch 10 | Train Acc: 0.9370, Val Acc: 0.9320
+Epoch 11 | Train Acc: 0.9370, Val Acc: 0.9322
+Epoch 12 | Train Acc: 0.9348, Val Acc: 0.9230
+Epoch 13 | Train Acc: 0.9373, Val Acc: 0.9378
+Epoch 14 | Train Acc: 0.9402, Val Acc: 0.9170
+Epoch 15 | Train Acc: 0.9369, Val Acc: 0.9296
+Epoch 16 | Train Acc: 0.9378, Val Acc: 0.9280
+Epoch 17 | Train Acc: 0.9456, Val Acc: 0.9320
+Epoch 18 | Train Acc: 0.9441, Val Acc: 0.9300
+Epoch 19 | Train Acc: 0.9447, Val Acc: 0.9270
+Epoch 20 | Train Acc: 0.9428, Val Acc: 0.9372
+Layer conv1: 33.14% pruned (6290.0/9408 remain)
+Layer layer1.0.conv1: 31.29% pruned (25330.0/36864 remain)
+Layer layer1.0.conv2: 30.94% pruned (25457.0/36864 remain)
+Layer layer1.1.conv1: 31.32% pruned (25318.0/36864 remain)
+Layer layer1.1.conv2: 31.86% pruned (25118.0/36864 remain)
+Layer layer2.0.conv1: 35.09% pruned (47854.0/73728 remain)
+Layer layer2.0.conv2: 35.77% pruned (94715.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 36.07% pruned (94274.0/147456 remain)
+Layer layer2.1.conv2: 36.95% pruned (92977.0/147456 remain)
+Layer layer3.0.conv1: 39.45% pruned (178555.0/294912 remain)
+Layer layer3.0.conv2: 43.96% pruned (330548.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 52.97% pruned (277386.0/589824 remain)
+Layer layer3.1.conv2: 52.35% pruned (281040.0/589824 remain)
+Layer layer4.0.conv1: 64.71% pruned (416248.0/1179648 remain)
+Layer layer4.0.conv2: 75.16% pruned (585970.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 76.94% pruned (544037.0/2359296 remain)
+Layer layer4.1.conv2: 76.62% pruned (551685.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 66.17% pruned (3779954.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 5 completed in 372.16 sec (6.20 min)
+
+--- Pruning Round 6/7 ---
+Epoch 1 | Train Acc: 0.9478, Val Acc: 0.9378
+Epoch 2 | Train Acc: 0.9479, Val Acc: 0.9310
+Epoch 3 | Train Acc: 0.9474, Val Acc: 0.9354
+Epoch 4 | Train Acc: 0.9524, Val Acc: 0.9406
+Epoch 5 | Train Acc: 0.9481, Val Acc: 0.9398
+Epoch 6 | Train Acc: 0.9520, Val Acc: 0.9454
+Epoch 7 | Train Acc: 0.9530, Val Acc: 0.9380
+Epoch 8 | Train Acc: 0.9533, Val Acc: 0.9312
+Epoch 9 | Train Acc: 0.9491, Val Acc: 0.9356
+Epoch 10 | Train Acc: 0.9540, Val Acc: 0.9392
+Epoch 11 | Train Acc: 0.9509, Val Acc: 0.9424
+Epoch 12 | Train Acc: 0.9537, Val Acc: 0.9434
+Epoch 13 | Train Acc: 0.9557, Val Acc: 0.9422
+Epoch 14 | Train Acc: 0.9557, Val Acc: 0.9440
+Epoch 15 | Train Acc: 0.9552, Val Acc: 0.9444
+Epoch 16 | Train Acc: 0.9558, Val Acc: 0.9406
+Epoch 17 | Train Acc: 0.9547, Val Acc: 0.9380
+Epoch 18 | Train Acc: 0.9542, Val Acc: 0.9388
+Epoch 19 | Train Acc: 0.9544, Val Acc: 0.9438
+Epoch 20 | Train Acc: 0.9581, Val Acc: 0.9428
+Layer conv1: 35.86% pruned (6034.0/9408 remain)
+Layer layer1.0.conv1: 34.74% pruned (24057.0/36864 remain)
+Layer layer1.0.conv2: 34.29% pruned (24222.0/36864 remain)
+Layer layer1.1.conv1: 34.84% pruned (24020.0/36864 remain)
+Layer layer1.1.conv2: 35.82% pruned (23659.0/36864 remain)
+Layer layer2.0.conv1: 39.26% pruned (44786.0/73728 remain)
+Layer layer2.0.conv2: 40.22% pruned (88155.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 40.53% pruned (87692.0/147456 remain)
+Layer layer2.1.conv2: 41.62% pruned (86087.0/147456 remain)
+Layer layer3.0.conv1: 44.21% pruned (164521.0/294912 remain)
+Layer layer3.0.conv2: 48.85% pruned (301721.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 57.73% pruned (249342.0/589824 remain)
+Layer layer3.1.conv2: 56.58% pruned (256086.0/589824 remain)
+Layer layer4.0.conv1: 71.04% pruned (341629.0/1179648 remain)
+Layer layer4.0.conv2: 82.57% pruned (411291.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 84.28% pruned (370870.0/2359296 remain)
+Layer layer4.1.conv2: 83.98% pruned (378070.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 72.62% pruned (3059394.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 6 completed in 372.48 sec (6.21 min)
+
+--- Pruning Round 7/7 ---
+Epoch 1 | Train Acc: 0.9578, Val Acc: 0.9446
+Epoch 2 | Train Acc: 0.9610, Val Acc: 0.9418
+Epoch 3 | Train Acc: 0.9584, Val Acc: 0.9420
+Epoch 4 | Train Acc: 0.9626, Val Acc: 0.9490
+Epoch 5 | Train Acc: 0.9634, Val Acc: 0.9322
+Epoch 6 | Train Acc: 0.9607, Val Acc: 0.9490
+Epoch 7 | Train Acc: 0.9609, Val Acc: 0.9344
+Epoch 8 | Train Acc: 0.9626, Val Acc: 0.9448
+Epoch 9 | Train Acc: 0.9613, Val Acc: 0.9434
+Epoch 10 | Train Acc: 0.9599, Val Acc: 0.9442
+Epoch 11 | Train Acc: 0.9629, Val Acc: 0.9458
+Epoch 12 | Train Acc: 0.9664, Val Acc: 0.9476
+Epoch 13 | Train Acc: 0.9636, Val Acc: 0.9428
+Epoch 14 | Train Acc: 0.9642, Val Acc: 0.9468
+Epoch 15 | Train Acc: 0.9627, Val Acc: 0.9472
+Epoch 16 | Train Acc: 0.9668, Val Acc: 0.9470
+Epoch 17 | Train Acc: 0.9636, Val Acc: 0.9442
+Epoch 18 | Train Acc: 0.9633, Val Acc: 0.9410
+Epoch 19 | Train Acc: 0.9676, Val Acc: 0.9482
+Epoch 20 | Train Acc: 0.9662, Val Acc: 0.9412
+Layer conv1: 38.06% pruned (5827.0/9408 remain)
+Layer layer1.0.conv1: 37.84% pruned (22916.0/36864 remain)
+Layer layer1.0.conv2: 37.29% pruned (23119.0/36864 remain)
+Layer layer1.1.conv1: 38.03% pruned (22845.0/36864 remain)
+Layer layer1.1.conv2: 39.13% pruned (22439.0/36864 remain)
+Layer layer2.0.conv1: 42.72% pruned (42234.0/73728 remain)
+Layer layer2.0.conv2: 44.01% pruned (82564.0/147456 remain)
+Layer layer2.0.downsample.0 (unpruned): 0.00% pruned (8192/8192 remain)
+Layer layer2.1.conv1: 44.31% pruned (82125.0/147456 remain)
+Layer layer2.1.conv2: 45.57% pruned (80256.0/147456 remain)
+Layer layer3.0.conv1: 48.26% pruned (152601.0/294912 remain)
+Layer layer3.0.conv2: 52.97% pruned (277373.0/589824 remain)
+Layer layer3.0.downsample.0 (unpruned): 0.00% pruned (32768/32768 remain)
+Layer layer3.1.conv1: 61.68% pruned (226021.0/589824 remain)
+Layer layer3.1.conv2: 60.23% pruned (234596.0/589824 remain)
+Layer layer4.0.conv1: 76.09% pruned (281995.0/1179648 remain)
+Layer layer4.0.conv2: 88.39% pruned (273964.0/2359296 remain)
+Layer layer4.0.downsample.0 (unpruned): 0.00% pruned (131072/131072 remain)
+Layer layer4.1.conv1: 90.09% pruned (233855.0/2359296 remain)
+Layer layer4.1.conv2: 89.78% pruned (241064.0/2359296 remain)
+Layer fc (unpruned): 0.00% pruned (5120/5120 remain)
+--> Total Model Sparsity: 77.78% pruned (2482946.0/11172032 remain)
+
+[OK] Excluded layer layer2.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer3.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer layer4.0.downsample.0 is unpruned as expected.
+[OK] Excluded layer fc is unpruned as expected.
+--> Round 7 completed in 379.47 sec (6.32 min)
+
+Iterative pruning completed in 2662.49 seconds (44.37 min).
+
+Final Pruned Model Performance:
+Train Acc: 0.9367, Val Acc: 0.9324, Test Acc: 0.7896
+
+--- Testing Lottery Ticket Hypothesis ---
+Epoch 1 | Train Acc: 0.4875, Val Acc: 0.5358
+Epoch 2 | Train Acc: 0.6254, Val Acc: 0.6326
+Epoch 3 | Train Acc: 0.6832, Val Acc: 0.6680
+Epoch 4 | Train Acc: 0.7135, Val Acc: 0.6792
+Epoch 5 | Train Acc: 0.7395, Val Acc: 0.7404
+Epoch 6 | Train Acc: 0.7571, Val Acc: 0.7354
+Epoch 7 | Train Acc: 0.7710, Val Acc: 0.7562
+Epoch 8 | Train Acc: 0.7835, Val Acc: 0.7616
+Epoch 9 | Train Acc: 0.7945, Val Acc: 0.7760
+Epoch 10 | Train Acc: 0.8037, Val Acc: 0.7602
+Epoch 11 | Train Acc: 0.8096, Val Acc: 0.7768
+Epoch 12 | Train Acc: 0.8140, Val Acc: 0.7818
+Epoch 13 | Train Acc: 0.8231, Val Acc: 0.7836
+Epoch 14 | Train Acc: 0.8263, Val Acc: 0.7886
+Epoch 15 | Train Acc: 0.8342, Val Acc: 0.7876
+Epoch 16 | Train Acc: 0.8355, Val Acc: 0.7916
+Epoch 17 | Train Acc: 0.8433, Val Acc: 0.7984
+Epoch 18 | Train Acc: 0.8473, Val Acc: 0.7828
+Epoch 19 | Train Acc: 0.8509, Val Acc: 0.8110
+Epoch 20 | Train Acc: 0.8541, Val Acc: 0.8110
+Epoch 21 | Train Acc: 0.8567, Val Acc: 0.8058
+Epoch 22 | Train Acc: 0.8616, Val Acc: 0.8068
+Epoch 23 | Train Acc: 0.8638, Val Acc: 0.8118
+Epoch 24 | Train Acc: 0.8647, Val Acc: 0.8046
+Epoch 25 | Train Acc: 0.8696, Val Acc: 0.8112
+Epoch 26 | Train Acc: 0.8770, Val Acc: 0.8134
+Epoch 27 | Train Acc: 0.8765, Val Acc: 0.8188
+Epoch 28 | Train Acc: 0.8783, Val Acc: 0.8180
+Epoch 29 | Train Acc: 0.8802, Val Acc: 0.8098
+Epoch 30 | Train Acc: 0.8853, Val Acc: 0.8140
+Epoch 31 | Train Acc: 0.8882, Val Acc: 0.8146
+Epoch 32 | Train Acc: 0.8881, Val Acc: 0.8264
+Epoch 33 | Train Acc: 0.8897, Val Acc: 0.8196
+Epoch 34 | Train Acc: 0.8924, Val Acc: 0.8146
+Epoch 35 | Train Acc: 0.8975, Val Acc: 0.8264
+Epoch 36 | Train Acc: 0.8989, Val Acc: 0.8222
+Epoch 37 | Train Acc: 0.9011, Val Acc: 0.8232
+Epoch 38 | Train Acc: 0.9034, Val Acc: 0.8174
+Epoch 39 | Train Acc: 0.9058, Val Acc: 0.8222
+Epoch 40 | Train Acc: 0.9066, Val Acc: 0.8278
+Epoch 41 | Train Acc: 0.9070, Val Acc: 0.8152
+Epoch 42 | Train Acc: 0.9118, Val Acc: 0.8242
+Epoch 43 | Train Acc: 0.9105, Val Acc: 0.8246
+Epoch 44 | Train Acc: 0.9139, Val Acc: 0.8220
+Epoch 45 | Train Acc: 0.9170, Val Acc: 0.8218
+Epoch 46 | Train Acc: 0.9149, Val Acc: 0.8244
+Epoch 47 | Train Acc: 0.9185, Val Acc: 0.8230
+Epoch 48 | Train Acc: 0.9196, Val Acc: 0.8210
+Epoch 49 | Train Acc: 0.9204, Val Acc: 0.8270
+Epoch 50 | Train Acc: 0.9230, Val Acc: 0.8252
+
+Lottery Ticket Final Performance:
+Train Acc: 0.9230, Val Acc: 0.8216, Test Acc: 0.8378

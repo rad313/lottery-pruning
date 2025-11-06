@@ -1,0 +1,127 @@
+
+--- Pruning Round 1/5 ---
+Epoch 1 | Train Acc: 0.2080, Val Acc: 0.1346
+Layer conv1: 2.86% pruned (9139.0/9408 remain)
+Layer layer1.0.conv1: 6.66% pruned (34408.0/36864 remain)
+Layer layer1.0.conv2: 6.70% pruned (34393.0/36864 remain)
+Layer layer1.1.conv1: 7.09% pruned (34252.0/36864 remain)
+Layer layer1.1.conv2: 7.08% pruned (34253.0/36864 remain)
+Layer layer2.0.conv1: 9.20% pruned (66945.0/73728 remain)
+Layer layer2.0.conv2: 10.37% pruned (132165.0/147456 remain)
+Layer layer2.1.conv1: 10.46% pruned (132029.0/147456 remain)
+Layer layer2.1.conv2: 10.52% pruned (131940.0/147456 remain)
+Layer layer3.0.conv1: 14.13% pruned (253238.0/294912 remain)
+Layer layer3.0.conv2: 15.21% pruned (500114.0/589824 remain)
+Layer layer3.1.conv1: 15.24% pruned (499911.0/589824 remain)
+Layer layer3.1.conv2: 15.45% pruned (498723.0/589824 remain)
+Layer layer4.0.conv1: 21.20% pruned (929598.0/1179648 remain)
+Layer layer4.0.conv2: 22.15% pruned (1836702.0/2359296 remain)
+Layer layer4.1.conv1: 22.27% pruned (1833792.0/2359296 remain)
+Layer layer4.1.conv2: 22.25% pruned (1834302.0/2359296 remain)
+--> Total Model Sparsity: 20.00% pruned (8795904.0/10994880 remain)
+
+--> Round 1 completed in 6.02 sec (0.10 min)
+
+--- Pruning Round 2/5 ---
+Epoch 1 | Train Acc: 0.3124, Val Acc: 0.1554
+Layer conv1: 6.08% pruned (8836.0/9408 remain)
+Layer layer1.0.conv1: 13.09% pruned (32037.0/36864 remain)
+Layer layer1.0.conv2: 13.37% pruned (31934.0/36864 remain)
+Layer layer1.1.conv1: 14.08% pruned (31675.0/36864 remain)
+Layer layer1.1.conv2: 14.11% pruned (31663.0/36864 remain)
+Layer layer2.0.conv1: 17.45% pruned (60866.0/73728 remain)
+Layer layer2.0.conv2: 19.53% pruned (118662.0/147456 remain)
+Layer layer2.1.conv1: 19.40% pruned (118850.0/147456 remain)
+Layer layer2.1.conv2: 19.63% pruned (118514.0/147456 remain)
+Layer layer3.0.conv1: 25.86% pruned (218648.0/294912 remain)
+Layer layer3.0.conv2: 27.77% pruned (426016.0/589824 remain)
+Layer layer3.1.conv1: 27.81% pruned (425789.0/589824 remain)
+Layer layer3.1.conv2: 28.16% pruned (423744.0/589824 remain)
+Layer layer4.0.conv1: 38.14% pruned (729785.0/1179648 remain)
+Layer layer4.0.conv2: 39.72% pruned (1422296.0/2359296 remain)
+Layer layer4.1.conv1: 39.90% pruned (1418003.0/2359296 remain)
+Layer layer4.1.conv2: 39.84% pruned (1419405.0/2359296 remain)
+--> Total Model Sparsity: 36.00% pruned (7036723.0/10994880 remain)
+
+--> Round 2 completed in 5.63 sec (0.09 min)
+
+--- Pruning Round 3/5 ---
+Epoch 1 | Train Acc: 0.2502, Val Acc: 0.2308
+Layer conv1: 10.54% pruned (8416.0/9408 remain)
+Layer layer1.0.conv1: 21.50% pruned (28940.0/36864 remain)
+Layer layer1.0.conv2: 21.19% pruned (29054.0/36864 remain)
+Layer layer1.1.conv1: 22.60% pruned (28534.0/36864 remain)
+Layer layer1.1.conv2: 23.07% pruned (28358.0/36864 remain)
+Layer layer2.0.conv1: 27.30% pruned (53600.0/73728 remain)
+Layer layer2.0.conv2: 28.66% pruned (105196.0/147456 remain)
+Layer layer2.1.conv1: 27.49% pruned (106916.0/147456 remain)
+Layer layer2.1.conv2: 27.51% pruned (106897.0/147456 remain)
+Layer layer3.0.conv1: 35.93% pruned (188945.0/294912 remain)
+Layer layer3.0.conv2: 38.35% pruned (363599.0/589824 remain)
+Layer layer3.1.conv1: 38.64% pruned (361941.0/589824 remain)
+Layer layer3.1.conv2: 39.01% pruned (359724.0/589824 remain)
+Layer layer4.0.conv1: 51.43% pruned (572986.0/1179648 remain)
+Layer layer4.0.conv2: 53.44% pruned (1098520.0/2359296 remain)
+Layer layer4.1.conv1: 53.73% pruned (1091712.0/2359296 remain)
+Layer layer4.1.conv2: 53.54% pruned (1096040.0/2359296 remain)
+--> Total Model Sparsity: 48.80% pruned (5629378.0/10994880 remain)
+
+--> Round 3 completed in 5.54 sec (0.09 min)
+
+--- Pruning Round 4/5 ---
+Epoch 1 | Train Acc: 0.3280, Val Acc: 0.2602
+Layer conv1: 12.13% pruned (8267.0/9408 remain)
+Layer layer1.0.conv1: 24.64% pruned (27782.0/36864 remain)
+Layer layer1.0.conv2: 24.32% pruned (27900.0/36864 remain)
+Layer layer1.1.conv1: 25.99% pruned (27283.0/36864 remain)
+Layer layer1.1.conv2: 26.73% pruned (27009.0/36864 remain)
+Layer layer2.0.conv1: 31.99% pruned (50144.0/73728 remain)
+Layer layer2.0.conv2: 34.20% pruned (97029.0/147456 remain)
+Layer layer2.1.conv1: 33.57% pruned (97950.0/147456 remain)
+Layer layer2.1.conv2: 33.75% pruned (97691.0/147456 remain)
+Layer layer3.0.conv1: 44.39% pruned (164001.0/294912 remain)
+Layer layer3.0.conv2: 47.30% pruned (310855.0/589824 remain)
+Layer layer3.1.conv1: 47.41% pruned (310160.0/589824 remain)
+Layer layer3.1.conv2: 47.76% pruned (308117.0/589824 remain)
+Layer layer4.0.conv1: 61.90% pruned (449411.0/1179648 remain)
+Layer layer4.0.conv2: 64.54% pruned (836545.0/2359296 remain)
+Layer layer4.1.conv1: 64.88% pruned (828675.0/2359296 remain)
+Layer layer4.1.conv2: 64.62% pruned (834683.0/2359296 remain)
+--> Total Model Sparsity: 59.04% pruned (4503502.0/10994880 remain)
+
+--> Round 4 completed in 6.92 sec (0.12 min)
+
+--- Pruning Round 5/5 ---
+Epoch 1 | Train Acc: 0.3762, Val Acc: 0.2588
+Layer conv1: 13.72% pruned (8117.0/9408 remain)
+Layer layer1.0.conv1: 27.43% pruned (26754.0/36864 remain)
+Layer layer1.0.conv2: 27.29% pruned (26805.0/36864 remain)
+Layer layer1.1.conv1: 29.12% pruned (26129.0/36864 remain)
+Layer layer1.1.conv2: 29.81% pruned (25873.0/36864 remain)
+Layer layer2.0.conv1: 36.44% pruned (46863.0/73728 remain)
+Layer layer2.0.conv2: 39.51% pruned (89194.0/147456 remain)
+Layer layer2.1.conv1: 39.28% pruned (89539.0/147456 remain)
+Layer layer2.1.conv2: 39.62% pruned (89028.0/147456 remain)
+Layer layer3.0.conv1: 51.76% pruned (142279.0/294912 remain)
+Layer layer3.0.conv2: 55.10% pruned (264807.0/589824 remain)
+Layer layer3.1.conv1: 55.17% pruned (264410.0/589824 remain)
+Layer layer3.1.conv2: 55.48% pruned (262604.0/589824 remain)
+Layer layer4.0.conv1: 70.27% pruned (350687.0/1179648 remain)
+Layer layer4.0.conv2: 73.19% pruned (632449.0/2359296 remain)
+Layer layer4.1.conv1: 73.53% pruned (624525.0/2359296 remain)
+Layer layer4.1.conv2: 73.18% pruned (632739.0/2359296 remain)
+--> Total Model Sparsity: 67.23% pruned (3602802.0/10994880 remain)
+
+--> Round 5 completed in 5.51 sec (0.09 min)
+
+Iterative pruning completed in 29.62 seconds (0.49 min).
+
+Final Pruned Model Performance:
+Train Acc: 0.2547, Val Acc: 0.2568, Test Acc: 0.2746
+
+--- Testing Lottery Ticket Hypothesis ---
+Epoch 1 | Train Acc: 0.3437, Val Acc: 0.4022
+Epoch 2 | Train Acc: 0.4684, Val Acc: 0.5024
+
+Lottery Ticket Final Performance:
+Train Acc: 0.5188, Val Acc: 0.5072, Test Acc: 0.5283
